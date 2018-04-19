@@ -1,4 +1,4 @@
-### 页面中添加富文本编辑器
+### 网页中添加富文本编辑器
 
 https://sunguangqing.github.io/Editor/editor.html
 
