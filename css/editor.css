@@ -1,0 +1,20 @@
+body, div, input, textarea, h2{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top: 60px;
+}
+.wrap{
+    width: 680px;
+    margin: 30px auto;
+}
+.wrap h2{
+    font-size: 20px;
+    color: #f90;
+    margin-bottom: 10px;
+}
+.editor{
+    width: 670px;
+    height: 300px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>富文本编辑器</title>
+</head>
+<link href="css/editor.css" rel="stylesheet" />
+<body>
+
+<div class="wrap">
+    <h2>全部功能：</h2>
+    <textarea class="editor" id="editor_all" name="content"><strong>全部功能</strong></textarea>
+</div>
+
+<div class="wrap">
+    <h2>部分功能：</h2>
+    <textarea class="editor" id="editor_part" name="content"><strong>部分功能</strong></textarea>
+</div>
+
+<script charset="utf-8" src="js/kindeditor-all.js"></script>
+<script charset="utf-8" src="js/lang/zh-CN.js"></script>
+<script>
+    KindEditor.ready(function(K) {
+        window.editor = K.create('#editor_part', {
+            items: [
+                'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline', 'removeformat', '|',
+                'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist', 'insertunorderedlist', '|',
+                'emoticons', 'image', 'multiimage', 'link', 'fullscreen'
+            ]
+        });
+    });
+
+    KindEditor.ready(function(K) {
+        window.editor = K.create('#editor_all');
+    });
+</script>
+</body>
+</html>
